@@ -3,7 +3,7 @@
 // ============================
 
 // URL de la API
-const API_URL = "https://3.16.44.208:4006/api/inventario";
+const API_URL = "https://3.16.44.208:4004/api/inventario";
 
 
 // ============================
@@ -223,3 +223,4 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarInventarios();
 
 });
+
