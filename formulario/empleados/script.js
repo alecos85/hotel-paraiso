@@ -3,7 +3,7 @@
 // ============================
 
 // URL de la API
-const API_URL = "http://3.16.44.208:4005/api/empleados";
+const API_URL = "https://3.16.44.208:4006/api/empleados";
 
 
 // ============================
@@ -238,4 +238,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("formulario")
             .addEventListener("submit", agregarEmpleado);
     cargarEmpleado();
+
 });
