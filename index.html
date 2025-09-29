@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraiso Del Otaku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cebecera -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Hotel Paraiso Del Otaku</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#eventos">EVENTOS</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#contactos">CONTACTOS</a></li>
+                    <li><a href="./formulario/index.html">ADMINISTRADOR</a></li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor Inicial -->
+    <main id="inicio" class="main-content">
+        <div class="container">
+            <!-- seccion animada -->
+            <section class="anime-section">
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="imagenes/castillo-otaku.gif" alt="Anime">
+                    </div>
+                    <div class="anime-content">
+                        <span class="category-big">BIENVENIDOS</span>
+                        <h2>Vive La Mejor Experiencia</h2>
+                        <p class="anime-msj">¡Bienvenidos, viajeros del anime! 
+                         🌸 Prepárense para una aventura inolvidable. En nuestro hotel, 
+                         cada rincón es un portal a sus mundos favoritos. 
+                         La experiencia que están a punto de vivir es única, creada por fans para fans. 
+                         ¡Estamos emocionados de que se queden con nosotros!</strong></p>                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cuadricula Eventos -->
+            <section id="eventos" class="articles-grid">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="imagenes/nakama.jpg" alt="Galeria1">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Maraton De One Piece</span>
+                        <h3>Revivie una gran experiencia viendo la maraton de peliculas del SHONEN mas popular en pantalla grande! <br> Todos los viernes del mes septiembre. Auditorio 2</h3>                       
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="imagenes/sala-juego.png" alt="Galeria2">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Arcade Room</span>
+                        <h3>PROXIMO LANZANMIENTO!! <br> Un espacio dedicado a los videojuegos, tanto modernos como retro y máquinas de arcade.</h3>                       
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="imagenes/karaoke.png" alt="Galeria3">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Noches de Karaoke Otaku</span>
+                        <h3>Un espacio donde los fans pueden cantar los openings y endings de sus animes favoritos. <br> Restaurante / Bar</h3>                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Artículos de segunda fila -->
+            <section id="servicios" class="articles-grid">
+                <div class="article-card large">
+                    <div class="article-image">
+                        <img src="imagenes/habitacion1.png" alt="Servicio1">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Habitaciones y Suites</span>
+                        <h3>comodidad y fantasía</h3>                        
+                        <p class="excerpt">No son solo habitaciones, son una experiencia inmersiva para el verdadero fan.</p>
+                        <button class="read-more" onclick="modal1.showModal()">Leer más</button>
+                    </div>
+                </div>
+
+                <div class="article-card large">
+                    <div class="article-image">
+                        <img src="imagenes/piscina.png" alt="Servicio2">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Zona de Relajación</span>
+                        <h3>Sumérgete en nuestra piscina de estilo onsen</h3>                        
+                        <p class="excerpt">un oasis de tranquilidad diseñado para el verdadero fan.</p>
+                        <button class="read-more" onclick="modal2.showModal()">Leer más</button>
+                    </div>
+                </div>
+            </section>
+            <section id="servicios" class="articles-grid">
+                <div class="article-card large">
+                    <div class="article-image">
+                        <img src="imagenes/tienda-recuerdos.png" alt="Servicio2">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Merchandising y Coleccionables</span>
+                        <h3>El Paraíso Para Todo FAN</h3>                        
+                        <p class="excerpt">Aquí encontrarás tesoros que no querrás dejar pasar: 
+                                           desde figuras de edición limitada y mangas exclusivos hasta ropa, 
+                                           peluches y llaveros de tus animes y videojuegos favoritos.</p>
+                        <button class="read-more" onclick="modal3.showModal()">Leer más</button>
+                    </div>
+                </div>
+
+                <div class="article-card large">
+                    <div class="article-image">
+                        <img src="imagenes/izakaya-comida.jpg" alt="Servicio2">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Restaurante y Bar</span>
+                        <h3>No solo te alimentarás</h3>                        
+                        <p class="excerpt"> ¡te sumergirás en un festival de sabores y cultura pop japonesa!.</p>
+                        <button class="read-more" onclick="modal4.showModal()">Leer más</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Sección del modal-->
+			
+				<dialog id="modal1">
+					<div class="modal">				
+					<div class="modal-content">
+						<h2>Habitaciones y Suites</h2>
+						<p>Tipos de habitaciones ofrecidas en este hotel: </p><br>
+                        <div class="article-image">
+                            <img src="imagenes/habitacion1.png" alt="Servicio2">
+                        </div>
+                        <article>
+                            <br>
+                           > Habitaciones y suites (capacidad máxima: 4 adultos) <br>
+                           > Habitaciones y suites con servicio Club Level (capacidad máxima: 6 adultos) <br>
+                           > Estudios de lujo (capacidad máxima: 5 adultos) <br>
+                           > Cabañas de 2 dormitorios (capacidad máxima: 8 adultos) <br>
+                           > Villas de 1, 2 y 3 dormitorios (capacidad máxima:12 adultos)
+                        </article>
+						<button onclick="modal1.close()" class="cerrar-modal">Cerrar</button>
+					</div> 
+					</div>
+				</dialog>
+				
+				<dialog id="modal2">
+					<div class="modal">				
+					<div class="modal-content">
+						<h2>Zona de Relajación</h2><br>
+						<div class="article-image">
+                            <img src="imagenes/piscinaonsen.png" alt="Servicio2">
+                        </div>
+                        <article>
+                            <br>
+                            Relájate y recarga energías en nuestra Zona de Relajación, un oasis de tranquilidad diseñado para el verdadero fan. 
+                            Sumérgete en nuestra piscina de estilo onsen, inspirada en las aguas termales de Japón, y disfruta de un momento de paz bajo cerezos en flor. 
+                            Este espacio es tu escape personal para desconectar del mundo real y conectar con la esencia de tus animes favoritos.
+                        </article>
+						<button onclick="modal2.close()" class="cerrar-modal">Cerrar</button>
+					</div> 
+					</div>
+				</dialog>
+				
+				<dialog id="modal3">
+					<div class="modal">				
+					<div class="modal-content">
+						<h2>Merchandising y Coleccionables</h2>
+						<br>
+                        <div class="article-image">
+                            <img src="imagenes/tienda-recuerdos.png" alt="Servicio2">
+                        </div>
+                        <article>
+                            <br>
+                            Entra a nuestra Tienda de Merchandising y Coleccionables, el paraíso para todo fan. Aquí encontrarás tesoros que no querrás dejar pasar,
+                             desde figuras de edición limitada y mangas exclusivos hasta ropa, peluches y llaveros de tus animes y videojuegos favoritos. 
+                             Es el lugar perfecto para llevarte un recuerdo de tu aventura con nosotros o encontrar ese objeto de colección que siempre has buscado
+                        </article>
+						<button onclick="modal3.close()" class="cerrar-modal">Cerrar</button>
+					</div> 
+					</div>
+				</dialog>
+				
+				<dialog id="modal4">
+					<div class="modal">				
+					<div class="modal-content">
+						<h2>Restaurante y Bar</h2>
+						<p>El Sabor de Japón en Cada Bocado: Restaurante y Bar "Otaku's Izakaya"</p><br>
+                        <div class="article-image">
+                            <img src="imagenes/izakaya-comida.jpg" alt="Servicio2">
+                        </div>
+                        <article><br>
+                            Sumérgete en una experiencia culinaria tan emocionante como tus animes y mangas favoritos en el "Otaku's Izakaya", 
+                            nuestro exclusivo restaurante y bar dentro del hotel. Aquí, la pasión por la cultura otaku se fusiona con la autenticidad de la gastronomía japonesa, 
+                            ofreciendo un viaje de sabores que deleitará tanto a los paladares más exigentes como a los corazones más fandom.
+                        </article>
+						<button onclick="modal4.close()" class="cerrar-modal">Cerrar</button>
+					</div> 
+					</div>
+				</dialog>
+			
+            <!-- Artículos de tercera fila -->
+            <!--            
+            <section class="bottom-articles">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="imagenes/" alt="Otros Actividades1">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">ACTIVIDADES RECOMENDADAS</span>
+                        <h3>Título del artículo</h3>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="imagenes/" alt="Otros Actividades1">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">ACTIVIDADES RECOMENDADAS</span>
+                        <h3>Título del artículo</h3>
+                    </div>
+                </div>
+            </section>
+        -->
+            <!--Seccion De Contactenos-->
+            <section id="contactos" class="contac-container">
+                <div class="form-container">
+                    <h2>Contáctanos</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="direccion-container">
+                    <div>
+                        <p>¿Tienes alguna pregunta o deseas hacer una reserva? Contáctanos:</p>
+                        <p><strong>Correo:</strong> <a href="mailto:reservas@hotelparaiso.com">reservas@hotelparaiso.com</a></p>
+                        <p><strong>Teléfono:</strong> <a href="tel:+1234567890">123-456-7890</a></p>
+                        <p><strong>Dirección:</strong> Calle Ejemplo #123, Ciudad Paraíso</p>
+                    </div>                    
+                </div> 
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-grid">
+        <div class="footer-card">
+            <p>&copy; 2025 Hotel Paraíso. Todos los derechos reservados.</p>
+            <p>
+                Síguenos en nuestras redes sociales: 
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+             </p>
+        </div>        
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
+
