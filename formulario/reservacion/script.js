@@ -3,7 +3,7 @@
 // ============================
 
 // URL de la API
-const API_URL = "http://3.16.44.208/api/reservaciones";
+const API_URL = "https://3.16.44.208/api/reservaciones";
 
 
 // ============================
@@ -240,4 +240,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("formulario")
             .addEventListener("submit", agregarReservacion);
     cargarReservaciones();
+
 });
