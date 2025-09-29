@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        Sistema de Inventario
+    </header>
+
+    <!-- Layout principal -->
+    <div class="main-container">
+
+        <!-- Formulario -->
+        <form id="formulario">
+            <h2>Nuevo Registro De Inventario</h2>
+            <input type="text" name="codigoarticulo" placeholder="Codigo Del Aticulo">
+            <input type="text" name="nombrearticulo" placeholder="Nombre Del Articulo">
+            <input type="text" name="categoria" placeholder="Categoria Del Articulo">
+            <input type="number" name="exitencias" placeholder="Cantidad Total Del Articulo">
+            <input type="number" name="valorunitario" placeholder="Valor Unitario Del Articulo">
+            <button type="submit">Guardar</button>
+        </form>
+
+        <!-- Tabla -->
+        <div class="table-container">
+            <table id="tabla-contactos">
+                <thead>
+                    <tr>
+                        <th>Codigo Del Aticulo</th>
+                        <th>Nombre Del Articulo</th>
+                        <th>Categoria Del Articulo</th>
+                        <th>Cantidad Total Del Articulo</th>
+                        <th>Valor Unitario Del Articulo</th>
+                        <th>Acciones</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí el JS insertará filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
